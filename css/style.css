@@ -4,8 +4,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-    font-family: 'Work Sans', sans-serif;
+body {
+  font-family: "Work Sans", sans-serif;
 }
 a {
   text-decoration: none;
@@ -14,55 +14,261 @@ ul,
 ol {
   list-style: none;
 }
-.container{
-    width: 1150px;
-    margin: auto;
+.container {
+  width: 1150px;
+  margin: auto;
 }
-.row{
-    display: flex;
-    flex-wrap: wrap;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 /* common css part ends */
 
 /* banner part starts */
-#banner{
-    background-image: url(../images/banner/banner2.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100%;
-    height: 800px;
+#banner {
+  background-image: url(../images/banner/banner2.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  height: 800px;
 }
-#banner .row{
-    height: 800px;
-    align-items: center;
-    justify-content: right;
+#banner .row {
+  height: 800px;
+  align-items: center;
+  justify-content: right;
 }
-#banner .banner_cnt{
-    text-align: right;
-    width: 480px;
+#banner .banner_cnt {
+  text-align: right;
+  width: 480px;
 }
-#banner .banner_cnt h1{
-    font-size: 50px;
-    color: #151414;
-    font-weight: 700;
-    line-height: 70px;
+#banner .banner_cnt h1 {
+  font-size: 50px;
+  color: #151414;
+  font-weight: 700;
+  line-height: 70px;
 }
-#banner .banner_cnt p{
-    font-size: 16px;
-    color: #444343;
-    font-weight: 400;
-    line-height: 20px;
-    margin: 20px 0;
+#banner .banner_cnt p {
+  font-size: 16px;
+  color: #444343;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 20px 0;
 }
-#banner .banner_cnt a{
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: 600;
-    line-height: 16px;
-    background-color: #F15B22;
-    display: inline-block;
-    padding: 15px;
-    border-radius: 5px;
+#banner .banner_cnt a {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 16px;
+  background-color: #f15b22;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 20px 0 20px 0;
 }
 /* banner part ends */
 
+/* failures section part starts */
+#failures {
+  margin: 40px 0;
+}
+.failures_img {
+  flex-basis: 50%;
+}
+.failures_img img {
+  height: 100%;
+  width: 90%;
+}
+.failure_cnt {
+  flex-basis: 35%;
+  align-self: center;
+  margin-left: 60px;
+}
+.failure_cnt h2 {
+  font-size: 40px;
+  color: #151414;
+  font-weight: 700;
+  line-height: 46px;
+}
+.failure_cnt p,
+#about .my_cnt p {
+  font-size: 16px;
+  color: #444343;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 15px 0;
+}
+.failure_cnt ul li {
+  color: #444343;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 8px 0;
+}
+.failure_cnt ul li i {
+  font-size: 16px;
+  color: #16d887;
+  margin-right: 5px;
+}
+
+/* failures section part ends */
+
+/* about section part starts */
+#about .container > h1,
+#my_plans > h1 {
+  font-size: 35px;
+  color: #151414;
+  font-weight: 700;
+  line-height: 46px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#about .my_img {
+  flex-basis: 50%;
+}
+#about .my_img img {
+  width: 100%;
+  border-radius: 30px 0 30px 0;
+}
+#about .my_cnt {
+  flex-basis: 45%;
+  margin-left: 55px;
+}
+#about .my_cnt h2 {
+  font-size: 35px;
+  color: #2f3742;
+  font-weight: 700;
+}
+#about .my_cnt a {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 16px;
+  background-color: #f15b22;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 20px 0 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+/* about section part ends */
+
+/* my plans section part starts */
+#my_plans {
+  margin: 50px 0;
+}
+#my_plans .plans_card {
+  flex-basis: 25%;
+}
+#my_plans .container .row {
+  text-align: center;
+}
+#my_plans .plans_card > h3 {
+  font-size: 25px;
+  color: #2f3742;
+  font-weight: 700;
+  line-height: 35px;
+  padding: 5px 0;
+}
+#my_plans .plans_card > span {
+  font-size: 18px;
+  color: #737272;
+  font-weight: 500;
+  line-height: 29px;
+}
+
+/* my plans section part ends */
+
+/* mindset section part starts */
+#mindset {
+  margin: 60px 0;
+  background-image: url(../images/gradient3.png), url(../images/watch.png);
+  height: 280px;
+  width: 100%;
+  background-size: contain;
+  background-position: top left 120px, top left 120px;
+  background-repeat: no-repeat, no-repeat;
+}
+#mindset .container article {
+  margin: 60px 0 0px 60px;
+  display: inline-block;
+  width: 430px;
+}
+#mindset .container article h3 {
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 46px;
+  margin-bottom: 20px;
+}
+#mindset .container article a {
+  font-size: 16px;
+  color: #f15b22;
+  font-weight: 600;
+  line-height: 26px;
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 13px 22px;
+  border-radius: 20px 0 20px 0;
+}
+/* mindset section part ends */
+
+/* footer section starts */
+footer {
+  background-color: #151414;
+  padding: 50px 0;
+}
+footer .row {
+  justify-content: space-between;
+}
+footer .ftr_left_card {
+  width: 470px;
+}
+footer .ftr_left_card h3 {
+  font-size: 40px;
+  color: #f8f8f8;
+  font-weight: 700;
+  line-height: 50px;
+}
+footer .ftr_left_card h3 + p,
+footer .ftr_left_card .email,
+footer .ftr_left_card .number {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 15px 0;
+}
+footer .ftr_left_card figure img {
+  margin: 0 5px;
+}
+footer .ftr_right_card h4 {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 29px;
+}
+footer input[type="email"] {
+  height: 30px;
+  width: 260px;
+  color: #f3f3f3;
+  font-size: 16px;
+  background-color: #151414;
+  border: 1px solid #f3f3f3;
+  border-radius: 20px 0 20px 0;
+  padding: 25px;
+  margin: 20px 0 10px 0;
+}
+footer input::placeholder {
+  color: #f3f3f3;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+footer input[type="button"] {
+  color: #f15b22;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px;
+  border-radius: 20px 0 20px 0;
+  background-color: white;
+}
+/* footer section ends */
